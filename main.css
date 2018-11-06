@@ -1,0 +1,33 @@
+/* Reset styles. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, footer, section {
+  padding: 5%;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input {
+ padding: 10px;
+ border-radius: 5px;
+}
+
+input::placeholder {
+  color: grey;
+}
+
+textarea {
+  padding: 10px;
+  min-height: 4rem;
+}
+
+.submit {
+  color: white;
+  background-color: orange;
+}
