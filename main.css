@@ -3,50 +3,223 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
-header, footer, section {
+header, footer {
   padding: 5%;
 }
 
 h1 {
   font-weight: 900;
+  font-size: 4rem;
+  padding: 2%;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 2.4rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 i {
-  color: blue;
-  font-size: 4rem;
+  color: white;
+  font-size: 3rem;
 }
 
 .centered {
-  position: center;
+  text-align: center;
+  margin: auto;
 }
 
-.bg-image {
+.right-pos {
+  text-align: right;
+}
 
+.padded {
+  padding: 2% 0%;
+}
+
+.text-color-1 {
+  color: rgb(255, 189, 62);
+}
+
+.text-color-2 {
+ color: rgb(24, 43, 54);
+}
+
+.text-color-3 {
+  color: rgb(44, 44, 44)
+}
+
+.text-color-4 {
+  color: rgb(149, 152, 154)
+}
+
+.text-color-5 {
+  color: rgb(160, 160, 160)
+}
+
+.intro {
+  background-image: url("img/gilles-lambert-249996.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 25%;
+}
+
+.intro h3 {
+  text-weight: 400;
+}
+
+.benefits h3,p {
+  color: rgb(24, 43, 54);
+}
+
+.benefits-block {
+  padding: 6%;
+  min-height: 30rem;
+}
+
+.benefits-img1 {
+  background-image: url("img/charles-deluvio-351207.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.benefits-img2 {
+  background-image: url("img/rhema-kallianpur-275251.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.features {
+  background-color: rgb(24, 43, 54);
+  width: 100%;
+  padding: 5% 4%;
+}
+
+.features h3 {
+  padding-bottom: 3%;
+}
+
+.features p {
+    color: white;
+    text-align: left;
+}
+
+.features i {
+  margin: 10%;
+}
+
+.feature-block {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.title-bg {
+  background-image: url("img/joanna-kosinska-129039.jpg");
+  padding: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-bg h2 {
+  font-weight: 900;
+  font-size: 3.2rem;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.title-bg p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.quote {
+  padding: 10% 5% 10% 5%;
+}
+
+.quote-content {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.quote-attr {
+ padding-top: 5%;
+ font-weight: 500;
+ font-size: 1.4rem;
+}
+
+.quote-icon {
+  font-size: 1rem;
+}
+
+.contact-form {
+  background-color: rgb(24, 43, 54);
+  width: 100%;
+  padding: 5%;
+}
+
+.contact-form-box {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.contact-form h1 {
+  font-size: 3.5rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.contact-form p {
+  color: white;
 }
 
 input, textarea {
   outline: none;
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 5px;
+  margin-bottom: 2%;
 }
 
 input {
  padding: 10px;
- border-radius: 5px;
+ width: 100%;
 }
 
 input::placeholder {
-  color: grey;
+  color: rgb(160, 160, 160)
 }
 
 textarea {
   padding: 10px;
-  min-height: 4rem;
+  min-height: 10rem;
+  resize: none;
+  width: 100%;
 }
 
-.submit {
+textarea::placeholder {
+  color: rgb(160, 160, 160)
+}
+
+.button {
+  font-weight: 700;
   color: white;
-  background-color: orange;
+  background-color: rgb(255, 189, 62);
+  border: none;
+  text-size: 2rem;
 }
