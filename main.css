@@ -3,10 +3,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid grey;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header, footer, section {
   padding: 5%;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+i {
+  color: blue;
+  font-size: 4rem;
+}
+
+.centered {
+  position: center;
+}
+
+.bg-image {
+
 }
 
 input, textarea {
