@@ -64,17 +64,6 @@ h3 {
   padding-bottom: 1%;
 }
 
-.benefits-img2 {
-  background-image: url("img/rhema-kallianpur-275251.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 250px;
-}
-
-.benefits-image-small {
-    display: none;
-}
-
 @media(max-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -114,12 +103,8 @@ h3 {
     font-size: 1.3rem;
   }
 
-  .benefits-img2 {
-    display: none;
-  }
-
-  .benefits-image-small {
-    display: block;
+  .mobile-small {
+    order:4;
   }
 }
 
@@ -216,6 +201,13 @@ i {
 
 .benefits-img1 {
   background-image: url("img/charles-deluvio-351207.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+.benefits-img2 {
+  background-image: url("img/rhema-kallianpur-275251.jpg");
   background-size: cover;
   background-position: center;
   min-height: 250px;
