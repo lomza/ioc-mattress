@@ -64,6 +64,11 @@ h3 {
   padding-bottom: 1%;
 }
 
+.features p {
+    color: white;
+    text-align: left;
+}
+
 @media(max-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -89,6 +94,10 @@ h3 {
   .benefits-block {
     padding-top: 3%;
     padding-bottom: 3%;
+  }
+
+  .features p {
+      font-size: 0.9rem;
   }
 
   .quote-content {
@@ -128,6 +137,10 @@ h3 {
   .intro {
     padding: 10%;
     height: 50vh;
+  }
+
+  .features p {
+      font-size: 0.8rem;
   }
 
   .benefits-block {
@@ -221,11 +234,6 @@ i {
 
 .features h3 {
   padding-bottom: 3%;
-}
-
-.features p {
-    color: white;
-    text-align: left;
 }
 
 .features i {
