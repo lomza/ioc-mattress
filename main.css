@@ -31,7 +31,8 @@ h3 {
 }
 
 p {
-  font-size: 1.2rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 i {
@@ -149,7 +150,7 @@ i {
 }
 
 .quote {
-  padding: 10% 5% 10% 5%;
+  padding: 5%;
 }
 
 .quote-content {
@@ -158,7 +159,6 @@ i {
 }
 
 .quote-attr {
- padding-top: 5%;
  font-weight: 500;
  font-size: 1.4rem;
 }
@@ -193,26 +193,17 @@ input, textarea {
   border: 1px solid rgb(160, 160, 160);
   border-radius: 5px;
   margin-bottom: 2%;
+  padding: 10px;
+  width: 100%;
 }
 
-input {
- padding: 10px;
- width: 100%;
-}
-
-input::placeholder {
+input::placeholder, textarea::placeholder {
   color: rgb(160, 160, 160)
 }
 
 textarea {
-  padding: 10px;
   min-height: 10rem;
   resize: none;
-  width: 100%;
-}
-
-textarea::placeholder {
-  color: rgb(160, 160, 160)
 }
 
 .button {
