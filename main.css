@@ -30,6 +30,139 @@ h3 {
   padding-bottom: 2%;
 }
 
+.intro {
+  background-image: url("img/gilles-lambert-249996.jpg");
+  background-size: cover;
+  padding: 25%;
+  height: 100vh;
+}
+
+.benefits-block {
+  padding: 6%;
+}
+
+.quote-content {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.quote-attr {
+ font-weight: 500;
+ font-size: 1.4rem;
+ padding-top: 5%;
+}
+
+.title-bg p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.title-bg h2 {
+  font-weight: 900;
+  font-size: 3.2rem;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.benefits-img2 {
+  background-image: url("img/rhema-kallianpur-275251.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+.benefits-image-small {
+    display: none;
+}
+
+@media(max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  .title-bg h2 {
+    font-size: 2.8rem;
+  }
+
+  .intro {
+    padding: 20%;
+    height: 75vh;
+  }
+
+  .benefits-block {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  .quote-content {
+    font-size: 1.5rem;
+  }
+
+  .quote-attr {
+   font-size: 1.2rem;
+  }
+
+  .title-bg p {
+    font-size: 1.3rem;
+  }
+
+  .benefits-img2 {
+    display: none;
+  }
+
+  .benefits-image-small {
+    display: block;
+  }
+}
+
+@media(max-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .title-bg h2 {
+    font-size: 2.5rem;
+  }
+
+  .intro {
+    padding: 10%;
+    height: 50vh;
+  }
+
+  .benefits-block {
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+
+  .quote-content {
+    font-size: 1.2rem;
+  }
+
+  .quote-attr {
+   font-size: 1rem;
+  }
+
+  .title-bg p {
+    font-size: 1.1rem;
+  }
+}
+
 i {
   color: white;
   font-size: 3rem;
@@ -68,13 +201,6 @@ i {
   color: rgb(160, 160, 160)
 }
 
-.intro {
-  background-image: url("img/gilles-lambert-249996.jpg");
-  background-size: cover;
-  padding: 25%;
-  height: 100vh;
-}
-
 .intro h3 {
   text-weight: 400;
 }
@@ -88,22 +214,11 @@ i {
   color: rgb(24, 43, 54);
 }
 
-.benefits-block {
-  padding: 6%;
-}
-
 .benefits-img1 {
   background-image: url("img/charles-deluvio-351207.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 200px;
-}
-
-.benefits-img2 {
-  background-image: url("img/rhema-kallianpur-275251.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 200px;
+  min-height: 250px;
 }
 
 .features {
@@ -137,31 +252,8 @@ i {
   background-size: cover;
 }
 
-.title-bg h2 {
-  font-weight: 900;
-  font-size: 3.2rem;
-  padding-top: 2%;
-  padding-bottom: 1%;
-}
-
-.title-bg p {
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
 .quote {
   padding: 10% 5% 10% 5%;
-}
-
-.quote-content {
-  font-weight: 500;
-  font-size: 1.7rem;
-}
-
-.quote-attr {
- font-weight: 500;
- font-size: 1.4rem;
- padding-top: 5%;
 }
 
 .quote-icon {
@@ -180,7 +272,6 @@ i {
 }
 
 .contact-form h1 {
-  font-size: 3.5rem;
   padding-top: 5%;
   padding-bottom: 5%;
 }
