@@ -26,11 +26,19 @@ nav a {
   color: white;
   font-weight: 600;
   font-size: 1.5rem;
-  margin: 2rem 1rem 2rem 1rem;
+  margin: 2rem 1rem;
 }
 
 nav a:hover, nav a:focus {
   color: rgb(255, 189, 62);
+}
+
+.mobile-show {
+  display: none;
+}
+
+.mobile-hide {
+  display: block;
 }
 
 h1 {
@@ -308,6 +316,8 @@ input, textarea {
   margin-bottom: 2%;
   padding: 10px;
   width: 100%;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 input::placeholder, textarea::placeholder {
@@ -324,5 +334,108 @@ textarea {
   color: white;
   background-color: rgb(255, 189, 62);
   border: none;
-  text-size: 2rem;
+  font-size: 1rem;
 }
+
+/* BURGER BUTTTON CSS */
+@media (max-width: 640px) {
+  .mobile-show {
+    display: block;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  /* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
+  .burger-button {
+    position:fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 9999999999;
+    padding: 8px;
+  }
+  /*this is where you can chand the color of the buttons*/
+  .burger-button span {
+    width: 40px;
+    border: 2px solid rgb(255, 189, 62);
+    background-color: rgb(255, 189, 62);
+    display: block;
+    border-radius: 22px;
+    transition: 1s;
+  }
+  .burger-button.active span {
+    border-color: rgb(255, 189, 62);
+    background-color:rgb(255, 189, 62);
+  }
+
+  .burger-top, .burger-bottom {
+    position: absolute;
+  }
+
+  .burger-top {
+    top: -02px;
+  }
+
+  .burger-bottom {
+    bottom: -02px;
+  }
+  /* make sure this has the same top as the burger button has padding*/
+  .burger-button.active .burger-top {
+    position: absolute;
+    top: 8px;
+    transform: rotateZ(45deg);
+    transition-duration: 1s;
+  }
+
+  .burger-button.active .burger-middle {
+  /*   transform: rotateZ(270deg); */
+    border-color: rgba(0,0,0,0);
+    background-color:rgba(0,0,0,0);
+  }
+
+  /* make sure this has the same bottom as the burger button has padding*/
+
+  .burger-button.active .burger-bottom {
+    position: absolute;
+    bottom: 8px;
+    transform: rotateZ(-45deg);
+    transition-duration: 1s;
+  }
+
+  .burger-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left:0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(249, 249, 249, 0.96);
+      padding:5px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      z-index: 9;
+  }
+
+  .burger-menu-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .burger-menu a {
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(24, 43, 54);
+    font-family: 'Alegreya Sans SC', sans-serif;
+    display:block;
+    text-align:center;
+    white-space:nowrap;
+  }
+
+  .burger-menu li {list-style:none}
+}
+/* BURGER BUTTTON CSS */
